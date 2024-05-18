@@ -10,12 +10,9 @@ const Form = ()=>{
     return( <div className="form">
     <form action="" onSubmit={(e)=>{
         e.preventDefault();
-        const form = e.target;
-        const formData = new FormData(form);
-        const formJson = Object.fromEntries(formData.entries());
-        console.log(forminput);
-
-
+        // const form = e.target;
+        // const formData = new FormData(form);
+        // const formJson = Object.fromEntries(formData.entries());`
 
     }}>
         <div className="row">
@@ -23,7 +20,7 @@ const Form = ()=>{
                 <div className="col-inr">
                     <input type="text" value={forminput.functionname} name="function" placeholder="Enter Function Name" onChange={(e)=>{setforminput({functionname:e.target.value})}} />
                 </div>
-            </div>
+            </div>``
             <div className="col-4">
                 <div className="col-inr">
                     <input type="date" value={forminput.eventdata} name="eventdata" placeholder="Select Date"  onChange={(e)=>{setforminput({eventdata:e.target.value})}} />
